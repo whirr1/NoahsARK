@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import socks
 import socket
-import fitz  # PyMuPDF
+import fitz
 
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLineEdit,
@@ -30,7 +30,6 @@ from impacket.smbconnection import SMBConnection, SessionError
 from impacket.smb import SMB_DIALECT
 from impacket.nt_errors import STATUS_ACCESS_DENIED, STATUS_LOGON_FAILURE, STATUS_BAD_NETWORK_NAME
 
-# --- STYLESHEETS AND CONSTANTS ---
 DARK_STYLESHEET = """
     QWidget {
         background-color: #2b2b2b;
@@ -204,8 +203,6 @@ def format_size(size):
         size /= power; n += 1
     return f"{size:.1f} {power_labels[n]}B"
 
-# --- HELPER & WIDGET CLASSES ---
-
 class TitleScreen(QWidget):
     start_app_signal = pyqtSignal()
 
@@ -219,7 +216,6 @@ class TitleScreen(QWidget):
         layout.setSpacing(25)
         layout.setContentsMargins(20, 20, 20, 20)
 
-        # Title Label
         title_label = QLabel("Noah's ARK")
         title_font = QFont("Segoe UI", 36)
         title_font.setBold(True)
@@ -227,20 +223,16 @@ class TitleScreen(QWidget):
         title_label.setAlignment(Qt.AlignCenter)
         title_label.setStyleSheet("color: #00aaff;")
 
-        # Image Label
         image_label = QLabel()
         image_path = "title_image.png"
         if os.path.exists(image_path):
             pixmap = QPixmap(image_path)
-            # CHANGE 1: The image is now scaled to a larger size (500x300).
-            # You can adjust these numbers to your liking.
             image_label.setPixmap(pixmap.scaled(500, 300, Qt.KeepAspectRatio, Qt.SmoothTransformation))
         else:
             image_label.setText("(Image not found: place 'title_image.png' here)")
             image_label.setStyleSheet("color: #888888;")
         image_label.setAlignment(Qt.AlignCenter)
 
-        # Button
         self.button = QPushButton("Board the ARK")
         self.button.setMinimumHeight(45)
         button_font = self.font()
@@ -248,12 +240,11 @@ class TitleScreen(QWidget):
         self.button.setFont(button_font)
         self.button.clicked.connect(self.start_app_signal.emit)
 
-        # CHANGE 2: Add stretchable space before and after the content to center it vertically.
-        layout.addStretch()  # Pushes everything down from the top
+        layout.addStretch() 
         layout.addWidget(title_label)
         layout.addWidget(image_label)
         layout.addWidget(self.button)
-        layout.addStretch()  # Pushes everything up from the bottom
+        layout.addStretch()  
 
 
 class ImageLabel(QLabel):
@@ -299,7 +290,6 @@ class OfficeConverterWorker(QObject):
             try: os.unlink(pdf_path)
             except Exception: pass
 
-# --- WORKER CLASSES ---
 class ScanWorker(QObject):
     host_authenticated = pyqtSignal(str, object, list) 
     host_error = pyqtSignal(str, str)
@@ -1088,13 +1078,11 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setStyleSheet(DARK_STYLESHEET)
 
-    # --- New startup logic for Title Screen ---
     title_screen = TitleScreen()
-    main_window = None  # Keep a reference
+    main_window = None  
 
     def start_main_app():
         global main_window
-        # Create the main window instance only when it's needed
         main_window = NoahsARK()
         main_window.show()
         title_screen.close()
