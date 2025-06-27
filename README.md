@@ -33,13 +33,13 @@ Noah's ARK is a graphical, multi-threaded SMB (Server Message Block) exploration
 ## Screenshots
 
 **Main Browser View:** Scan a network and browse shares in a familiar tree structure.
-![image](https://github.com/user-attachments/assets/0ac04477-63f5-40b1-af58-56e7e02aa518)
+![2025-06-27_15-36](https://github.com/user-attachments/assets/3def14fd-c2a3-4851-b4d6-952da37cfde3)
 
 
 **Search & Loot:** Find files across multiple hosts and collect them in the Loot tab.
-![image](https://github.com/user-attachments/assets/09e2ed23-8710-4b12-b534-3647a1683c08)
+![2025-06-27_15-36_1](https://github.com/user-attachments/assets/a5574de5-a516-4eeb-965c-a3f120a8c6de)
 
-![image](https://github.com/user-attachments/assets/70771d8d-c8bd-4c39-8aeb-4081fbabcbf3)
+![2025-06-27_15-37](https://github.com/user-attachments/assets/f4372b76-c86c-4c99-b889-df6bdd55c4ef)
 
 ---
 
