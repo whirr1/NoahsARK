@@ -125,6 +125,12 @@ The socks proxys are configured to my setup, if you want to change and configure
 
 ---
 
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+--- 
+
 ## Credits
 
 This tool stands on the shoulders of giants. It wouldn't be possible without these amazing open-source projects:
