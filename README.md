@@ -5,7 +5,7 @@ SMB GUI Pentesting Tool
 
 
 <p align="center">
-![title_image](https://github.com/user-attachments/assets/444a5641-f682-480c-9fd7-a42e1a04ac92)
+<img src=![title_image](https://github.com/user-attachments/assets/444a5641-f682-480c-9fd7-a42e1a04ac92)/>
 </p>
 
 
