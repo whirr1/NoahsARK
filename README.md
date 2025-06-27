@@ -4,7 +4,9 @@ SMB GUI Pentesting Tool
 # Noah's ARK - Advanced SMB Reconnaissance Kit
 
 
+<p align="center">
 ![title_image](https://github.com/user-attachments/assets/444a5641-f682-480c-9fd7-a42e1a04ac92)
+</p>
 
 
 Noah's ARK is a graphical, multi-threaded SMB (Server Message Block) exploration tool designed for network reconnaissance and file discovery. It provides an intuitive interface for scanning networks, browsing file shares, searching for files by name or content, and "looting" interesting files for later review, all while maintaining a responsive user experience.
