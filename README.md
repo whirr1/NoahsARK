@@ -33,10 +33,13 @@ Noah's ARK is a graphical, multi-threaded SMB (Server Message Block) exploration
 ## Screenshots
 
 **Main Browser View:** Scan a network and browse shares in a familiar tree structure.
-![Main Browser](https://i.imgur.com/xYq7Z8r.png)
+![image](https://github.com/user-attachments/assets/0ac04477-63f5-40b1-af58-56e7e02aa518)
+
 
 **Search & Loot:** Find files across multiple hosts and collect them in the Loot tab.
-![Search and Loot](https://i.imgur.com/BvC9n4D.png)
+![image](https://github.com/user-attachments/assets/09e2ed23-8710-4b12-b534-3647a1683c08)
+
+![image](https://github.com/user-attachments/assets/70771d8d-c8bd-4c39-8aeb-4081fbabcbf3)
 
 ---
 
@@ -113,6 +116,12 @@ The application requires the following Python libraries. You can install them al
     * In the "Browser" or "Search" tabs, right-click any file and select "Add to Loot".
     * The file will be added to the "Loot" tab for easy access.
     * From the Loot tab, you can preview, remove, or export the list of looted files as a CSV.
+
+---
+
+## Note
+
+The socks proxys are configured to my setup, if you want to change and configure your own, you must change the code.
 
 ---
 
