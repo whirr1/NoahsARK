@@ -98,7 +98,7 @@ The application requires the following Python libraries. You can install them al
     * **Proxy:** Select a SOCKS5 proxy if needed (the tool assumes proxies are running on `127.0.0.1` at the specified ports).
 
 4.  **Scan & Browse:**
-    * Click the **"Scan && Browse"** button to start the network scan. The progress bar will show the status.
+    * Click the **"Scan & Browse"** button to start the network scan. The progress bar will show the status.
     * Hosts that respond and allow authentication will appear in the "Browser" tab.
     * Expand hosts to see shares, and expand shares/folders to browse their contents.
 
